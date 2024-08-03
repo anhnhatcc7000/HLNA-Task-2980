@@ -6,7 +6,7 @@ class House {
    late String price;
    late String description;
    late int bedrooms;
-   late int? bathrooms;
+   late int bathrooms;
    late String ownerName;
    late String ownerImage;
    late List<String> galleryImages;
