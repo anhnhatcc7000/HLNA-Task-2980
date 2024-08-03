@@ -15,11 +15,12 @@ class DetailHousePage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final double statusBarHeight = MediaQuery.of(context).padding.top;
     return Scaffold(
       endDrawer: const CustomDrawer(),
       body: SingleChildScrollView(
         child: Padding(
-          padding: const EdgeInsets.fromLTRB(20,30,20,10),
+          padding: EdgeInsets.fromLTRB(20, statusBarHeight, 20, 10),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [

@@ -17,10 +17,11 @@ class HomeScreen extends StatefulWidget {
 class _HomeScreenState extends State<HomeScreen> {
   @override
   Widget build(BuildContext context) {
+    final double statusBarHeight = MediaQuery.of(context).padding.top;
     return Scaffold(
       endDrawer: const CustomDrawer(),
       body: Padding(
-        padding: const EdgeInsets.only(top: 30),
+        padding: EdgeInsets.only(top: statusBarHeight),
         child: Expanded(
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
