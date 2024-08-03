@@ -27,7 +27,7 @@ class _CustomDrawerState extends State<CustomDrawer> {
           children: <Widget>[
             const SizedBox(height: 150,),
             _createDrawerItem(
-              icon: Icons.house,
+              icon: Icons.home_outlined,
               text: 'Home',
               isSelected: selectedItem == 'Home',
               context: context,
